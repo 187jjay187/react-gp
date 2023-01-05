@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { configureStore } from '@reduxjs/toolkit';
 import rocketReducer from './Rockets/Rockets';
 import missionReducer from './Missions/Missions';
