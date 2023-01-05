@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../assets/planet.png';
 
 // stylesheet
-import './Navbar.css';
+// import './Navbar.css';
 
 const Navbar = () => {
   const links = [
