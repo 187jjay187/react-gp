@@ -16,7 +16,27 @@ const Rockets = () => {
     dispatch(toggleReservation(id));
   };
 
-  
+  if (rockets.length === 0) {
+    return (
+      <div className="loading">
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <div className="rockets-main-section">
+        {rockets.map((rocket) => (
+          <RocketDetails
+            key={rocket.id}
+            rocket={rocket}
+            eventHandler={eventHandler}
+          />
+        ))}
+      </div>
+    </>
+  );
 };
 
 export default Rockets;
