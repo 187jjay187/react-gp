@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 7fr 1fr 1fr;
 }
 
+/* grid item */
 .grid-item {
   min-width: 9rem;
   display: flex;
@@ -11,25 +12,30 @@
   border-bottom: 1px solid rgb(222, 226, 230);
 }
 
+/* grid item */
 .grid-item:first-child {
   border-left: 1px solid rgb(222, 226, 230);
 }
 
+/* mission list name */
 .missionName {
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: bold;
 }
 
+/* mission list name background */
 .missionList:nth-of-type(even) {
   background-color: rgb(242, 242, 242);
 }
 
+/* mission list description */
 .missionDescription {
   font-size: 0.9rem;
   line-height: 1.4rem;
 }
 
+/* button activity */
 .active-btn,
 .notMember-btn {
   display: flex;
@@ -45,11 +51,13 @@
   font-size: 0.9rem;
 }
 
+/* button activity */
 .notMember-btn {
   background-color: rgb(108, 117, 125);
   font-size: 0.8rem;
 }
 
+/* button activity */
 .join-btn,
 .leave-btn {
   display: flex;
@@ -65,21 +73,25 @@
   cursor: pointer;
 }
 
+/* button activity */
 .leave-btn {
   color: rgb(230, 54, 73);
   border: 1px solid rgb(230, 54, 73);
 }
 
+/* button activity */
 .join-btn:hover,
 .leave-btn:hover {
   font-size: 1rem;
 }
 
+/* button activity */
 .join-btn:active,
 .leave-btn:active {
   font-size: 1rem;
 }
 
+/* media query button activity */
 @media screen and (max-width: 1024px) {
   .active-btn,
   .notMember-btn {
@@ -87,33 +99,39 @@
     font-size: 0.8rem;
   }
 
+  /* button activity */
   .join-btn,
   .leave-btn {
     padding: 0.4rem 0.5rem;
     font-size: 0.9rem;
   }
 
+  /* button activity */
   .join-btn:hover,
   .leave-btn:hover {
     font-size: 1rem;
   }
 
+  /* button activity */
   .join-btn:active,
   .leave-btn:active {
     font-size: 0.9rem;
   }
 }
 
+/* media query mission list */
 @media screen and (max-width: 768px) {
   .missionList {
     margin-bottom: 2rem;
     grid-template-columns: 1fr;
   }
 
+  /* media query mission list grid item */
   .grid-item {
     border-left: 1px solid rgb(222, 226, 230);
   }
 
+  /* media query mission list name */
   .missionName {
     margin: auto;
     font-size: 1.2rem;
@@ -121,31 +139,37 @@
     font-weight: bold;
   }
 
+  /* media query mission list grid item */
   .grid-item:first-child {
     background-color: rgb(242, 242, 242);
   }
 
+  /* media query mission list grid background color */
   .missionList:nth-of-type(even) {
     background-color: white;
   }
 
+  /* media query button activity */
   .active-btn,
   .notMember-btn {
     padding: 0.2rem 0.4rem;
     font-size: 0.8rem;
   }
 
+  /* media query button activity */
   .join-btn,
   .leave-btn {
     padding: 0.4rem 0.5rem;
     font-size: 0.9rem;
   }
 
+  /* media query button activity */
   .join-btn:hover,
   .leave-btn:hover {
     font-size: 1rem;
   }
 
+  /* media query button activity */
   .join-btn:active,
   .leave-btn:hover {
     font-size: 0.9rem;

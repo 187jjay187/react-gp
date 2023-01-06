@@ -1,28 +1,30 @@
 /* eslint-disable camelcase */
+// imports
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions, toggleJoinMission } from '../Redux/Missions/Missions';
 import DisplayMission from '../components/DisplayMission';
 
-// StyleSheet
+// import missions.css stylesheet
 import './Missions.css';
 
+// call and destructure state
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.Missions);
-
   const status = useSelector((state) => state.status);
 
+  // create mission function
   const eventHandler = (mission_id) => {
     dispatch(toggleJoinMission(mission_id));
   };
 
+  // use useffect and fetchmission
   useEffect(() => {
     if (missions.length === 0) {
       dispatch(fetchMissions());
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [dispatch, missions.length]);
 
   if (status === 'loading') {
     return (
@@ -40,6 +42,7 @@ const Missions = () => {
     );
   }
 
+  // map the mission details and return html information
   return (
     <div className="listContainer">
       <div className="gridHeader">
@@ -55,9 +58,9 @@ const Missions = () => {
           eventHandler={eventHandler}
         />
       ))}
-
     </div>
   );
 };
 
+// export missions
 export default Missions;
