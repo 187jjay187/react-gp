@@ -67,11 +67,15 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Live Demo Link([Space Travelers' Hub](https://space-travelers-hub-hx7p.onrender.com/))
+- Live Demo Link - ([Space Travelers' Hub](https://space-travelers-hub-hx7p.onrender.com/))
 
 ## 🚀 Project Update Details
 
-- in this update i've added inline comments to clean up the code and make it easier to read through
+- Completed Project
+
+## 🚀 Kanban Board Link 
+
+- [Kanban Board](https://github.com/187jjay187/react-gp/projects/1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
