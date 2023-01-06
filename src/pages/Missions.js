@@ -10,6 +10,7 @@ import './Missions.css';
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.Missions);
+  const status = useSelector((state) => state.status);
 
   const eventHandler = (mission_id) => {
     dispatch(toggleJoinMission(mission_id));
@@ -21,6 +22,22 @@ const Missions = () => {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  if (status === 'loading') {
+    return (
+      <div className="loading">
+        <h3>Loading...</h3>
+      </div>
+    );
+  }
+
+  if (status === 'error') {
+    return (
+      <div className="error">
+        <h3>Something went wrong</h3>
+      </div>
+    );
+  }
 
   return (
     <div className="listContainer">

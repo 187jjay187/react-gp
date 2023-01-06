@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 // Stylesheet
 import './RocketDetails.css';
+
 // import rimg from '../assets/web3-hackathon-project-screenshot.png';
 
 const RocketDetails = ({ rocket, eventHandler }) => {
