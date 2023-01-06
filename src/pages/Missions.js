@@ -10,6 +10,7 @@ import './Missions.css';
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.Missions);
+
   const eventHandler = (mission_id) => {
     dispatch(toggleJoinMission(mission_id));
   };

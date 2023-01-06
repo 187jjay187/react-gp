@@ -3,23 +3,26 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 // Utils
+
 import pick, { addJoined } from '../utils';
 
-// API
+// API BASE_URL
 
 const BASE_URL = 'https://api.spacexdata.com/v3/missions';
 
-// Actions
+// functions for missions
 const FETCH_MISSIONS = 'Missions/Missions/FETCH_MISSIONS';
 const TOGGLE_JOIN_MISSION = 'Missions/Missions/TOGGLE_JOIN_MISSION';
 
-// Reducer
+// Reducers for mission state
+
 const initialState = [];
 
 export default function missionReducer(state = initialState, action) {
   switch (action.type) {
     case `${FETCH_MISSIONS}/fulfilled`:
       return [...action.payload];
+
     case TOGGLE_JOIN_MISSION:
       return (state.map((missions) => {
         if (missions.mission_id === action.mission_id) {
@@ -35,6 +38,7 @@ export default function missionReducer(state = initialState, action) {
   }
 }
 
+
 // Action Creators
 export const fetchMissions = createAsyncThunk(FETCH_MISSIONS, async () => {
   const response = await axios.get(BASE_URL);
@@ -47,6 +51,7 @@ export const fetchMissions = createAsyncThunk(FETCH_MISSIONS, async () => {
   });
   missions = addJoined(missions);
   return missions;
+
 });
 
 export const toggleJoinMission = (mission_id) => ({ type: TOGGLE_JOIN_MISSION, mission_id });
