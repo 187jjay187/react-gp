@@ -4,6 +4,7 @@ import { fetchMissions } from '../Redux/Missions/Missions';
 import DisplayMission from '../components/DisplayMission';
 import './Missions.css';
 
+
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.Missions);
@@ -16,6 +17,7 @@ const Missions = () => {
   }, []);
 
   return (
+
     <div className="listContainer">
       <div className="gridHeader">
         <h3 className="gridTitle">Mission</h3>
