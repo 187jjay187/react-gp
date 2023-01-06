@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Live Demo Link([http://localhost:8080/](https://187jjay187.github.io))
+- Live Demo Link([Space Travelers' Hub](https://space-travelers-hub-gqzz.onrender.com))
 
 ## 🚀 Project Update Details
 
