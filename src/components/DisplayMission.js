@@ -1,9 +1,11 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import { PropTypes } from 'prop-types';
+
 import './DisplayMission.css';
 
 export default function DisplayMission({ mission, eventHandler }) {
+
   const { mission_id, mission_name, description } = mission;
 
   return (
@@ -18,6 +20,7 @@ export default function DisplayMission({ mission, eventHandler }) {
         <button type="button" className="active-btn">Active Member</button>
       </div>
       <div className="grid-item">
+
         { mission.reserved ? (
           <button
             type="button"
@@ -39,6 +42,7 @@ export default function DisplayMission({ mission, eventHandler }) {
             Join Mission
           </button>
         )}
+
       </div>
     </div>
   );
@@ -47,4 +51,5 @@ export default function DisplayMission({ mission, eventHandler }) {
 DisplayMission.propTypes = {
   mission: PropTypes.oneOfType([PropTypes.object]).isRequired,
   eventHandler: PropTypes.func.isRequired,
+
 };
