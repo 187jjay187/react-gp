@@ -1,4 +1,3 @@
-
 /* eslint-disable camelcase */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -16,7 +15,6 @@ const Missions = () => {
   const eventHandler = (mission_id) => {
     dispatch(toggleJoinMission(mission_id));
   };
-
 
   useEffect(() => {
     if (missions.length === 0) {

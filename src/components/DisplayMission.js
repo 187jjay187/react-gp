@@ -5,7 +5,6 @@ import { PropTypes } from 'prop-types';
 import './DisplayMission.css';
 
 export default function DisplayMission({ mission, eventHandler }) {
-
   const { mission_id, mission_name, description } = mission;
 
   return (

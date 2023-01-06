@@ -1,4 +1,3 @@
-
 /* eslint-disable camelcase */
 
 import { createAsyncThunk } from '@reduxjs/toolkit';
@@ -15,7 +14,6 @@ const BASE_URL = 'https://api.spacexdata.com/v3/missions';
 const FETCH_MISSIONS = 'Missions/Missions/FETCH_MISSIONS';
 
 const TOGGLE_JOIN_MISSION = 'Missions/Missions/TOGGLE_JOIN_MISSION';
-
 
 // Reducer
 const initialState = [];
@@ -64,4 +62,3 @@ export const fetchMissions = createAsyncThunk(FETCH_MISSIONS, async () => {
 });
 
 export const toggleJoinMission = (mission_id) => ({ type: TOGGLE_JOIN_MISSION, mission_id });
-
