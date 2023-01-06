@@ -10,7 +10,6 @@
   margin-bottom: 0.5rem;
 }
 
-
 .profile-rockets-section,
 .profile-missions-section {
   display: flex;
@@ -35,4 +34,3 @@
     transform: translateX(-300px);
   }
 }
-

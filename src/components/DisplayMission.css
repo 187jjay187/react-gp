@@ -4,9 +4,7 @@
 }
 
 .grid-item {
-
   min-width: 9rem;
-
   display: flex;
   padding: 0.5rem;
   border-right: 1px solid rgb(222, 226, 230);
@@ -32,10 +30,8 @@
   line-height: 1.4rem;
 }
 
-
 .active-btn,
 .notMember-btn {
-
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -56,7 +52,6 @@
 
 .join-btn,
 .leave-btn {
-
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -66,7 +61,6 @@
   border: 1px solid rgb(51, 58, 64);
   border-radius: 0.2rem;
   padding: 0.5rem 0.6rem;
-
   font-size: 0.9rem;
   cursor: pointer;
 }
@@ -83,15 +77,12 @@
 
 .join-btn:active,
 .leave-btn:active {
-
   font-size: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
-
   .active-btn,
   .notMember-btn {
-
     padding: 0.2rem 0.4rem;
     font-size: 0.8rem;
   }
@@ -102,7 +93,6 @@
     font-size: 0.9rem;
   }
 
-
   .join-btn:hover,
   .leave-btn:hover {
     font-size: 1rem;
@@ -110,7 +100,6 @@
 
   .join-btn:active,
   .leave-btn:active {
-
     font-size: 0.9rem;
   }
 }
@@ -140,22 +129,17 @@
     background-color: white;
   }
 
-
   .active-btn,
   .notMember-btn {
-
     padding: 0.2rem 0.4rem;
     font-size: 0.8rem;
   }
 
-
   .join-btn,
   .leave-btn {
-
     padding: 0.4rem 0.5rem;
     font-size: 0.9rem;
   }
-
 
   .join-btn:hover,
   .leave-btn:hover {
@@ -164,7 +148,6 @@
 
   .join-btn:active,
   .leave-btn:hover {
-
     font-size: 0.9rem;
   }
 }

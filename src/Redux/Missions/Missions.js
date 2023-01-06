@@ -46,7 +46,6 @@ export default function missionReducer(state = initialState, action) {
   }
 }
 
-
 // functions to create Missions
 export const fetchMissions = createAsyncThunk(FETCH_MISSIONS, async () => {
   try {
@@ -63,7 +62,6 @@ export const fetchMissions = createAsyncThunk(FETCH_MISSIONS, async () => {
   } catch (error) {
     return error;
   }
-
 });
 
 export const toggleJoinMission = (mission_id) => ({ type: TOGGLE_JOIN_MISSION, mission_id });
