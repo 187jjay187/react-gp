@@ -3,9 +3,11 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import './DisplayMission.css';
 
+// destructure the mission object
 export default function DisplayMission({ mission, eventHandler }) {
   const { mission_id, mission_name, description } = mission;
 
+  // display missions list html information
   return (
     <div className="missionList">
       <div className="grid-item">
@@ -48,6 +50,7 @@ export default function DisplayMission({ mission, eventHandler }) {
   );
 }
 
+// define the type of each prop
 DisplayMission.propTypes = {
   mission: PropTypes.oneOfType([PropTypes.object]).isRequired,
   eventHandler: PropTypes.func.isRequired,

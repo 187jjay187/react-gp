@@ -2,16 +2,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Stylesheet
+// import RocketDetails.css Stylesheet
 import './RocketDetails.css';
 
-// import rimg from '../assets/web3-hackathon-project-screenshot.png';
-
+// import propertypes from proptypes library
 const RocketDetails = ({ rocket, eventHandler }) => {
   const {
     id, rocket_name, flickr_images, description, reserved,
   } = rocket;
 
+  // return the rocket details html information
   return (
     <>
       <div className="rocket-details-container">
@@ -41,9 +41,11 @@ const RocketDetails = ({ rocket, eventHandler }) => {
   );
 };
 
+// define the type of each prop
 RocketDetails.propTypes = {
   rocket: PropTypes.oneOfType([PropTypes.object]).isRequired,
   eventHandler: PropTypes.func.isRequired,
 };
 
+// export RocketDetails component
 export default RocketDetails;

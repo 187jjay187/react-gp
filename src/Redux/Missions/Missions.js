@@ -1,12 +1,12 @@
 /* eslint-disable camelcase */
+// imports
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// Utils folder
+// import redux utils folder
 import pick, { addJoined } from '../utils';
 
-// API BASE_URL
-
+// Call API BASE_URL
 const BASE_URL = 'https://api.spacexdata.com/v3/missions';
 
 // functions for missions
@@ -57,4 +57,5 @@ export const fetchMissions = createAsyncThunk(FETCH_MISSIONS, async () => {
   }
 });
 
+// export toggle
 export const toggleJoinMission = (mission_id) => ({ type: TOGGLE_JOIN_MISSION, mission_id });

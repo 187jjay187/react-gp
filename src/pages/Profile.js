@@ -1,18 +1,22 @@
+// import react
 import React from 'react';
 import { useSelector } from 'react-redux';
-// Components
+
+// import missionlists and rocketlists components
 import MissionLists from '../components/MissionLists';
 import RocketLists from '../components/RocketLists';
 
-// Stylesheet
+// import profile.css stylesheet
 import './Profile.css';
 
+// call and destructure state
 const Profile = () => {
   const rockets = useSelector((state) => state.Rockets);
   const missions = useSelector((state) => state.Missions);
   const reservedRockets = rockets.filter((item) => item.reserved === true);
   const joinedMissions = missions.filter((mission) => mission.joined === true);
 
+  // map the profile details and return html information
   return (
     <>
       <div className="profile-main-container">
@@ -47,4 +51,5 @@ const Profile = () => {
   );
 };
 
+// export profile
 export default Profile;
