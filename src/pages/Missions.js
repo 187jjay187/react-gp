@@ -10,6 +10,7 @@ import './Missions.css';
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.Missions);
+
   const status = useSelector((state) => state.status);
 
   const eventHandler = (mission_id) => {
@@ -54,6 +55,7 @@ const Missions = () => {
           eventHandler={eventHandler}
         />
       ))}
+
     </div>
   );
 };
