@@ -4,7 +4,6 @@ import { fetchMissions } from '../Redux/Missions/Missions';
 import DisplayMission from '../components/DisplayMission';
 import './Missions.css';
 
-
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.Missions);
