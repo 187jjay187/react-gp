@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Live Demo Link([Space Travelers' Hub](https://space-travelers-hub-gqzz.onrender.com))
+- Live Demo Link([Space Travelers' Hub](https://space-travelers-hub-hx7p.onrender.com/))
 
 ## 🚀 Project Update Details
 
