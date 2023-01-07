@@ -1,0 +1,97 @@
+/* rockets details main container */
+.rockets-main-section {
+  padding: 0 4%;
+}
+
+/* rockets details container */
+.rocket-details-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 1%;
+  margin-bottom: 1.5rem;
+}
+
+/* rockets details image */
+.rocket-image-section {
+  width: 16rem;
+}
+
+/* rockets details image */
+.rocket-image-section img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* rockets details */
+.rocket-detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* rockets name text */
+.rocket-name {
+  font-weight: normal;
+}
+
+/* rockets action when reserved */
+.reservation-status {
+  background-color: #00d7be;
+  color: #fff;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.4rem;
+}
+
+/* rockets details image */
+.rocket-btn-reserve {
+  background-color: #006bd6;
+  color: #fff;
+  height: 2.2rem;
+  width: 8rem;
+  border: 1px solid #006bd6;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+/* rocket btn */
+.rocket-btn-cancel {
+  background-color: #fff;
+  color: #000;
+  height: 2.2rem;
+  width: 8.5rem;
+  border: 1px solid #000;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+/* rocket btn */
+.rocket-btn-cancel:hover {
+  border: 1px solid #f00;
+}
+
+/* rocket btn */
+.rocket-btn-reserve:hover {
+  border: 1px solid #00d7be;
+}
+
+/* rocket details media query */
+@media screen and (max-width: 768px) {
+  .rocket-details-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    column-gap: 1%;
+  }
+
+  /* rocket details media query */
+  .rocket-detail-section {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* rocket name media query */
+  .rocket-name {
+    border-bottom: 1px solid #006bd6;
+  }
+}

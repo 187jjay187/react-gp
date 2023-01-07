@@ -1,0 +1,29 @@
+/* profile main container */
+.profile-main-container {
+  padding: 0 4%;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* mission list  */
+.mission-lists,
+.rockets-list {
+  margin-bottom: 0.5rem;
+}
+
+/* missions and rockets profile section */
+.profile-rockets-section,
+.profile-missions-section {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* no reservations text */
+.no-reserved {
+  align-self: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #006bd6;
+}
